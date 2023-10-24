@@ -10,6 +10,6 @@
                 <ui:Label tabindex="-1" text="Rad drehen und Belohnung erhalten!" parse-escape-sequences="true" display-tooltip-when-elided="true" style="-unity-text-align: middle-center; flex-grow: 1; margin-top: 28px; margin-bottom: 28px;" />
             </ui:VisualElement>
         </ui:VisualElement>
-        <ui:Instance template="Wheel" name="Wheel" style="flex-grow: 1; width: 100%; margin-right: 10px; margin-left: 10px;" />
+        <ui:Instance template="Wheel" name="Wheel" style="flex-grow: 1; width: 100%; padding-top: 25px; padding-bottom: 25px; padding-right: 10px; padding-left: 10px;" />
     </ui:VisualElement>
 </ui:UXML>
