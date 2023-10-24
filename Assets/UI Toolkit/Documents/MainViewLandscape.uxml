@@ -1,0 +1,16 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="Wheel" src="project://database/Assets/UI%20Toolkit/Documents/Wheel.uxml?fileID=9197481963319205126&amp;guid=e984e5b0860aa4dd19163ba5f4593208&amp;type=3#Wheel" />
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/Main.uss?fileID=7433441132597879392&amp;guid=246323701b6a8442fbac12f6f98134a0&amp;type=3#Main" />
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/Landscape.uss?fileID=7433441132597879392&amp;guid=d782a7e9f99f84698bf08741d6ae6b02&amp;type=3#Landscape" />
+    <ui:VisualElement name="Root" style="flex-grow: 1; width: 100%; height: 100%; background-image: url(&apos;project://database/Assets/Sprites/Bg/Bg.png?fileID=2800000&amp;guid=78a154f6ec1774c6895b51e6c4953660&amp;type=3#Bg&apos;); -unity-background-scale-mode: scale-and-crop; align-items: center;">
+        <ui:VisualElement name="Top" style="flex-grow: 0; align-items: stretch; margin-top: 70px; rotate: -5deg; display: flex; visibility: visible;">
+            <ui:VisualElement name="Header" class="header-head">
+                <ui:Label tabindex="-1" text="Bonusse!" parse-escape-sequences="true" display-tooltip-when-elided="true" style="color: rgb(0, 0, 0); margin-top: 18px; margin-right: 60px; margin-bottom: 18px; margin-left: 50px; -unity-text-align: middle-center; font-size: 36px;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Body" class="header-body" style="border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px;">
+                <ui:Label tabindex="-1" text="Rad drehen und Belohnung erhalten!" parse-escape-sequences="true" display-tooltip-when-elided="true" style="-unity-text-align: middle-center; flex-grow: 1; margin-top: 28px; margin-bottom: 28px; font-size: 36px; margin-right: 20px; margin-left: 20px;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:Instance template="Wheel" name="Wheel" style="flex-grow: 1; width: 100%; margin-top: 50px;" />
+    </ui:VisualElement>
+</ui:UXML>

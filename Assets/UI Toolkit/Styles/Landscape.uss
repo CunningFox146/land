@@ -1,0 +1,15 @@
+.wheel-button__text {
+    font-size: 32px;
+}
+
+.wheel-text-container {
+    padding-top: 125px;
+}
+
+.wheel-text__bottom {
+    font-size: 18px;
+}
+
+.wheel-text {
+    font-size: 32px;
+}

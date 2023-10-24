@@ -1,0 +1,72 @@
+:root {
+    --header-head: rgb(255, 255, 255);
+    --header-body: rgb(22, 37, 63);
+    --color-2: yellow;
+}
+
+Label {
+    color: rgb(255, 255, 255);
+    -unity-font-definition: url('project://database/Assets/Fonts/Rubik/Rubik-Regular%20SDF.asset?fileID=11400000&guid=e3e6b69d019cf46aaaad9af67f52ef9d&type=2#Rubik-Regular SDF');
+    -unity-font-style: bold;
+    font-size: 18px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+}
+
+.button__icon {
+    position: absolute;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    background-color: rgba(0, 0, 0, 0);
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+}
+
+.header-body {
+    flex-grow: 0;
+    background-color: var(--header-body);
+}
+
+.header-head {
+    flex-grow: 0;
+    align-items: center;
+    background-color: var(--header-head);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    justify-content: center;
+    align-self: center;
+}
+
+.wheel-text {
+    -unity-text-align: middle-center;
+}
+
+.wheel-text__bottom {
+    padding-top: 7px;
+    font-size: 14px;
+    -unity-text-align: middle-center;
+}
+
+.wheel-button__text {
+}
+
+.wheel-text-container {
+    flex-grow: 1;
+    position: absolute;
+    height: 100%;
+    padding-top: 50px;
+}
