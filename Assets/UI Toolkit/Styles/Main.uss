@@ -20,7 +20,6 @@ Label {
 }
 
 .button__icon {
-    position: absolute;
     margin-top: 0;
     margin-right: 0;
     margin-bottom: 0;
@@ -69,4 +68,34 @@ Label {
     position: absolute;
     height: 100%;
     padding-top: 50px;
+}
+
+.unity-base-field__input {
+    background-color: rgba(0, 0, 0, 0);
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+}
+
+.flag {
+    width: 60px;
+    height: 24px;
+    margin-top: 5px;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    -unity-background-scale-mode: scale-to-fit;
 }

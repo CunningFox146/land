@@ -185,9 +185,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5b95d9a2cab41e9b0581cd5756404b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _panelSettings: {fileID: 11400000, guid: 39a87d772f3cb4f9b9e27c4ad3895730, type: 2}
   _mainViewPortraitPrefab: {fileID: 5610240361735545598, guid: b703521b93c41401aadf710c338c7f93, type: 3}
   _mainViewLandscapePrefab: {fileID: 7249521051746251177, guid: eb4726a8fe3c44b759eee5e4289af458, type: 3}
+  _locales:
+  - {fileID: 11400000, guid: aff1ed60d0b944fd7b16197e8a43753a, type: 2}
+  - {fileID: 11400000, guid: 906f6ca13e6624aaf86d08b9c5769960, type: 2}
 --- !u!4 &672925029
 Transform:
   m_ObjectHideFlags: 0

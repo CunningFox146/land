@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <UnityMvvmToolkit.UITK.BindableUIElements.BindableButton parse-escape-sequences="true" display-tooltip-when-elided="true" name="LanguageSelect" command="LanguagePickCommand" class="button__icon" style="flex-direction: row; align-items: center;">
+        <ui:VisualElement name="Flag" class="button__icon" style="flex-grow: 0; background-image: url(&apos;project://database/Assets/Sprites/Locale/LocaleGe.png?fileID=21300000&amp;guid=34d8474c4fcab4add9a844c86a2d9d9e&amp;type=3#LocaleGe&apos;); width: 60px; height: 24px; -unity-background-scale-mode: scale-to-fit;" />
+        <ui:VisualElement name="Dropdown" style="flex-grow: 0; width: 16px; height: 14px; background-image: url(&apos;project://database/Assets/Sprites/Locale/Dropdown.png?fileID=21300000&amp;guid=90d27bdcfb6d34f8e8f06416c6888651&amp;type=3#Dropdown&apos;);" />
+    </UnityMvvmToolkit.UITK.BindableUIElements.BindableButton>
+    <Land.Elements.BindableVisibilityElement binding-visibility-path="LanguagePickerVisible">
+        <UnityMvvmToolkit.UITK.BindableUIElements.BindableButton parse-escape-sequences="true" display-tooltip-when-elided="true" name="Button" command="SetLanguageCommand, ge" class="button__icon flag" style="background-image: url(&apos;project://database/Assets/Sprites/Locale/LocaleGe.png?fileID=21300000&amp;guid=34d8474c4fcab4add9a844c86a2d9d9e&amp;type=3#LocaleGe&apos;);" />
+        <UnityMvvmToolkit.UITK.BindableUIElements.BindableButton parse-escape-sequences="true" display-tooltip-when-elided="true" name="Button" command="SetLanguageCommand, en" class="button__icon flag" style="background-image: url(&apos;project://database/Assets/Sprites/Locale/LocaleEn.png?fileID=21300000&amp;guid=c256d66573b96445eb3d8616fbf449b2&amp;type=3#LocaleEn&apos;);" />
+    </Land.Elements.BindableVisibilityElement>
+</ui:UXML>
