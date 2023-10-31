@@ -1,3 +1,4 @@
+using Land.Utils;
 using UnityEngine.UIElements;
 using UnityMvvmToolkit.Core.Interfaces;
 using UnityMvvmToolkit.UITK;
@@ -19,14 +20,12 @@ namespace Land.UI
 
         public void Show()
         {
-            uiDocument.rootVisualElement.style.visibility = Visibility.Hidden;
-            uiDocument.rootVisualElement.style.display = DisplayStyle.None;
+            uiDocument.rootVisualElement.Show();
         }
 
         public void Hide()
         {
-            uiDocument.rootVisualElement.style.visibility = Visibility.Visible;
-            uiDocument.rootVisualElement.style.display = DisplayStyle.Flex;
+            uiDocument.rootVisualElement.Hide();
         }
 
         [Inject]

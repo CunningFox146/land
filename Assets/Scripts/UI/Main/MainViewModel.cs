@@ -1,3 +1,4 @@
+using System;
 using Land.Localization;
 using UnityMvvmToolkit.Core;
 using UnityMvvmToolkit.Core.Interfaces;
@@ -6,6 +7,7 @@ namespace Land.UI.Main
 {
     public class MainViewModel : IBindingContext
     {
+        public event Action AnimDone;
         private readonly ILocalizationService _localizationService;
         public IProperty<string> HeaderText { get; }
         public IProperty<string> BodyText { get; }
@@ -51,8 +53,7 @@ namespace Land.UI.Main
         {
             UpdateLocalization();
         }
-
-
+        
         private void UpdateLocalization()
         {
             HeaderText.Value = _localizationService.GetString("bonus");

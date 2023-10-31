@@ -187,6 +187,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _mainViewPortraitPrefab: {fileID: 5610240361735545598, guid: b703521b93c41401aadf710c338c7f93, type: 3}
   _mainViewLandscapePrefab: {fileID: 7249521051746251177, guid: eb4726a8fe3c44b759eee5e4289af458, type: 3}
+  _popupViewPortraitPrefab: {fileID: 5427087671834681736, guid: df5f6e8ee732e447b8148a57aadaa99b, type: 3}
+  _popupViewLandscapePrefab: {fileID: 8514759007544434723, guid: 2491a49e4a2394382b24732c95107208, type: 3}
   _locales:
   - {fileID: 11400000, guid: aff1ed60d0b944fd7b16197e8a43753a, type: 2}
   - {fileID: 11400000, guid: 906f6ca13e6624aaf86d08b9c5769960, type: 2}

@@ -1,0 +1,15 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/Main.uss?fileID=7433441132597879392&amp;guid=246323701b6a8442fbac12f6f98134a0&amp;type=3#Main" />
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/Portrait.uss?fileID=7433441132597879392&amp;guid=7019738b4f2894687aea9197683d6f9b&amp;type=3#Portrait" />
+    <ui:VisualElement name="Root" style="flex-grow: 1; width: 100%; height: 100%; align-items: center; justify-content: flex-end; padding-right: 12px; padding-left: 12px;">
+        <ui:VisualElement class="popup-body" style="width: 100%; height: 522px; margin-bottom: 73px;">
+            <UnityMvvmToolkit.UITK.BindableUIElements.BindableLabel tabindex="-1" text="Your bonus" class="popup-header" style="margin-top: 70px; font-size: 28px;" />
+            <ui:Label tabindex="-1" text="1000 EUR" parse-escape-sequences="true" display-tooltip-when-elided="true" class="popup-win-text" />
+            <ui:Label tabindex="-1" text="+100 FS" parse-escape-sequences="true" display-tooltip-when-elided="true" class="popup-win-text__bottom" />
+            <UnityMvvmToolkit.UITK.BindableUIElements.BindableLabel tabindex="-1" text="Lade die App herunter und erhalte deinen Bonus!" class="popup-info" style="font-size: 14px; padding-right: 32px; padding-left: 32px; white-space: normal;" />
+            <UnityMvvmToolkit.UITK.BindableUIElements.BindableButton class="button-popup" style="margin-top: 45px;">
+                <UnityMvvmToolkit.UITK.BindableUIElements.BindableLabel tabindex="-1" text="Download" class="button-popup__text" />
+            </UnityMvvmToolkit.UITK.BindableUIElements.BindableButton>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

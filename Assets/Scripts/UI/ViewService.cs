@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using Land.UI.Main;
+using Land.UI.Popup;
 using UnityEngine;
 using UnityEngine.UIElements;
 using Zenject;
@@ -15,11 +16,12 @@ namespace Land.UI
 
         private ScreenOrientation Orientation { get; set; }
 
-        public ViewService(MainViewLandscape.Factory mainViewLandscapeFactory,  MainViewPortrait.Factory mainViewPortraitFactory)
+        public ViewService(MainViewLandscape.Factory mainViewLandscapeFactory,  MainViewPortrait.Factory mainViewPortraitFactory, PopupViewPortrait.Factory popupViewPortrait, PopupViewLandscape.Factory popupViewLandscape)
         {
             _allViews = new Dictionary<Type, (IView portraitView, IView landscapeView)>
             {
-                [typeof(MainView)] = (mainViewLandscapeFactory.Create(), mainViewPortraitFactory.Create())
+                [typeof(MainView)] = (mainViewLandscapeFactory.Create(), mainViewPortraitFactory.Create()),
+                [typeof(PopupView)] = (popupViewLandscape.Create(), popupViewPortrait.Create())
             };
             foreach (var viewData in _allViews.Values)
             {
@@ -79,7 +81,7 @@ namespace Land.UI
 
         private void UpdateScreenRatio()
         {
-            Orientation = Screen.width > Screen.height ? ScreenOrientation.Landscape : ScreenOrientation.Portrait;
+            Orientation = Screen.width > Screen.height ? ScreenOrientation.Portrait : ScreenOrientation.Landscape;
         }
         
         private enum ScreenOrientation

@@ -1,6 +1,7 @@
 using System;
 using Land.UI;
 using Land.UI.Main;
+using Land.UI.Popup;
 using UnityEngine;
 
 namespace DefaultNamespace
@@ -10,9 +11,10 @@ namespace DefaultNamespace
         private IViewService _viewService;
 
         [Zenject.Inject]
-        private void Constructor(IViewService viewService)
+        private void Constructor(IViewService viewService, MainViewModel mainViewModel)
         {
             _viewService = viewService;
+            mainViewModel.AnimDone += () => _viewService.PushView<PopupView>();
         }
 
         private void Awake()

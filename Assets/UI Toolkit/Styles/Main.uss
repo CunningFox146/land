@@ -1,6 +1,10 @@
 :root {
     --header-head: rgb(255, 255, 255);
     --header-body: rgb(22, 37, 63);
+    --popup-body: rgb(48, 43, 43);
+    --popup-text: rgb(98, 171, 217);
+    --popup-button: rgb(100, 173, 218);
+    --info: rgb(164, 162, 162);
     --color-2: yellow;
 }
 
@@ -113,4 +117,70 @@ BindableLabel {
     padding-right: 0;
     padding-bottom: 0;
     padding-left: 0;
+}
+
+.popup-body {
+    flex-grow: 0;
+    align-self: center;
+    background-color: var(--popup-body);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.popup-header {
+    -unity-text-align: upper-center;
+    -unity-font-style: normal;
+    -unity-font-definition: url('project://database/Assets/Fonts/Rubik/Rubik-Medium%20SDF.asset?fileID=11400000&guid=58976e39e597c4c6b9cb856e68333b0e&type=2#Rubik-Medium SDF');
+    font-size: 36px;
+}
+
+.popup-win-text {
+    margin-top: 42px;
+    -unity-text-align: upper-center;
+    font-size: 48px;
+    color: var(--popup-text);
+}
+
+.popup-win-text__bottom {
+    -unity-font-style: normal;
+    -unity-font-definition: url('project://database/Assets/Fonts/Rubik/Rubik-SemiBold%20SDF.asset?fileID=11400000&guid=cacfd3c6ed807454bb39879bc049a676&type=2#Rubik-SemiBold SDF');
+    font-size: 32px;
+    -unity-text-align: upper-center;
+    margin-top: 14px;
+    color: var(--popup-text);
+}
+
+.popup-info {
+    margin-top: 50px;
+    font-size: 16px;
+    -unity-text-align: upper-center;
+    color: var(--info);
+}
+
+.button-popup {
+    margin-top: 52px;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-right: 50px;
+    padding-bottom: 16px;
+    padding-left: 50px;
+    align-self: center;
+    padding-top: 16px;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: var(--popup-button);
+}
+
+.button-popup__text {
+    -unity-font-style: normal;
+    -unity-font-definition: url('project://database/Assets/Fonts/Rubik/Rubik-SemiBold%20SDF.asset?fileID=11400000&guid=cacfd3c6ed807454bb39879bc049a676&type=2#Rubik-SemiBold SDF');
 }
