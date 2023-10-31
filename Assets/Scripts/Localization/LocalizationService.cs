@@ -15,17 +15,21 @@ namespace Land.Localization
         public LocalizationService(IEnumerable<LocalizationData> allLocales)
         {
             _allLocales = allLocales;
-            ChangeLocale(_allLocales.First().localeName);
+
+            ChangeLocale(_allLocales.First());
         }
 
         public string CurrentLocale { get; private set; }
 
-
         public void ChangeLocale(string localeName)
         {
-            var locale = _allLocales.FirstOrDefault(l => l.localeName == localeName);
+            ChangeLocale(_allLocales.FirstOrDefault(l => l.localeName == localeName));
+        }
+        
+        private void ChangeLocale(LocalizationData locale)
+        {
             _lookup = locale;
-            CurrentLocale = localeName;
+            CurrentLocale = locale.localeName;
             LocaleChanged?.Invoke();
         }
 

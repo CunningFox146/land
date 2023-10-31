@@ -15,5 +15,23 @@ MonoBehaviour:
   localeName: en
   strings:
     _serializedList:
-    - Key: test
-      Value: english
+    - Key: bonus
+      Value: Bonuses!
+    - Key: body
+      Value: Spin the wheel and receive a reward!
+    - Key: no
+      Value: NO
+    - Key: profit
+      Value: PROFIT
+    - Key: try
+      Value: TRY IT
+    - Key: again
+      Value: AGAIN
+    - Key: your_bonus
+      Value: Your Bonus
+    - Key: your_bonus_body
+      Value: Register on the site  and get your Bonus!
+    - Key: register
+      Value: Register
+    - Key: download
+      Value: Download

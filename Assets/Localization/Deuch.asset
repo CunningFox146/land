@@ -12,8 +12,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eac5c104ff3f4d3d8479dba5c8635df3, type: 3}
   m_Name: Deuch
   m_EditorClassIdentifier: 
-  localeName: ge
+  localeName: de
   strings:
     _serializedList:
-    - Key: test
-      Value: deuch
+    - Key: bonus
+      Value: Bonusse!
+    - Key: body
+      Value: Rad drehen und Belohnung erhalten!
+    - Key: no
+      Value: KEIN
+    - Key: profit
+      Value: GEWINN
+    - Key: try
+      Value: VERSUCHEN  SIE
+    - Key: again
+      Value: ES NOCHMAL
+    - Key: your_bonus
+      Value: Dein Bonus
+    - Key: your_bonus_body
+      Value: Lade die App herunter und erhalte deinen  Bonus!
+    - Key: register
+      Value: Registrieren
+    - Key: download
+      Value: Downloaden

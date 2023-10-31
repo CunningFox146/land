@@ -99,3 +99,18 @@ Label {
     padding-left: 0;
     -unity-background-scale-mode: scale-to-fit;
 }
+
+BindableLabel {
+    color: rgb(255, 255, 255);
+    -unity-font-definition: url('project://database/Assets/Fonts/Rubik/Rubik-Regular%20SDF.asset?fileID=11400000&guid=e3e6b69d019cf46aaaad9af67f52ef9d&type=2#Rubik-Regular SDF');
+    -unity-font-style: bold;
+    font-size: 18px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+}

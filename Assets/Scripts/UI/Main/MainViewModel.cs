@@ -7,8 +7,11 @@ namespace Land.UI.Main
     public class MainViewModel : IBindingContext
     {
         private readonly ILocalizationService _localizationService;
-        public IProperty<string> Header { get; }
+        public IProperty<string> HeaderText { get; }
+        public IProperty<string> BodyText { get; }
         public IProperty<bool> LanguagePickerVisible { get; }
+        public IProperty<bool> IsEnVisible { get; }
+        public IProperty<bool> IsGeVisible { get; }
         public ICommand LanguagePickCommand { get; }
         public ICommand<string> SetLanguageCommand { get; }
         
@@ -16,8 +19,11 @@ namespace Land.UI.Main
         {
             _localizationService = localizationService;
                 
-            Header = new Property<string>();
+            HeaderText = new Property<string>();
+            BodyText = new Property<string>();
             LanguagePickerVisible = new Property<bool>();
+            IsGeVisible = new Property<bool>();
+            IsEnVisible = new Property<bool>();
             LanguagePickCommand = new Command(() => LanguagePickerVisible.Value = !LanguagePickerVisible.Value);
             SetLanguageCommand = new Command<string>(ChangeLocale);
             
@@ -32,19 +38,19 @@ namespace Land.UI.Main
             LanguagePickerVisible.Value = false;
         }
 
-        private void OnLocaleChanged(object sender, string locale)
-        {
-            _localizationService.ChangeLocale(locale);
-        }
-
         private void OnLocaleChanged()
         {
             UpdateLocalization();
         }
 
+
         private void UpdateLocalization()
         {
-            Header.Value = _localizationService.GetString("test");
+            HeaderText.Value = _localizationService.GetString("bonus");
+            BodyText.Value = _localizationService.GetString("body");
+            
+            IsGeVisible.Value = _localizationService.CurrentLocale == "de";
+            IsEnVisible.Value = _localizationService.CurrentLocale == "en";
         }
     }
 }
