@@ -6,8 +6,27 @@
             </ui:Button>
             <Land.Elements.AspectRatioElement aspect-ratio-x="1" aspect-ratio-y="1" name="Text" picking-mode="Ignore" style="align-items: center; justify-content: center;">
                 <ui:VisualElement name="VisualElement" class="wheel-text-container">
-                    <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" class="wheel-text" />
-                    <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" class="wheel-text wheel-text__bottom" />
+                    <ui:Label tabindex="-1" text="1000 EUR" parse-escape-sequences="true" display-tooltip-when-elided="true" class="wheel-text" />
+                    <ui:Label tabindex="-1" text="+100 FS" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" class="wheel-text wheel-text__bottom" />
+                </ui:VisualElement>
+                <ui:VisualElement name="VisualElement" class="wheel-text-container" style="rotate: 62.5deg;">
+                    <UnityMvvmToolkit.UITK.BindableUIElements.BindableLabel tabindex="-1" text="123" binding-text-path="TryHeadText" display-tooltip-when-elided="false" class="wheel-text" />
+                    <UnityMvvmToolkit.UITK.BindableUIElements.BindableLabel tabindex="-1" text="123" binding-text-path="TryBodyText" class="wheel-text wheel-text__bottom" />
+                </ui:VisualElement>
+                <ui:VisualElement name="VisualElement" class="wheel-text-container" style="rotate: 122.5deg;">
+                    <UnityMvvmToolkit.UITK.BindableUIElements.BindableLabel tabindex="-1" text="123" binding-text-path="NoHeadText" class="wheel-text" />
+                    <UnityMvvmToolkit.UITK.BindableUIElements.BindableLabel tabindex="-1" text="123" binding-text-path="NoBodyText" class="wheel-text wheel-text__bottom" />
+                </ui:VisualElement>
+                <ui:VisualElement name="VisualElement" class="wheel-text-container" style="rotate: 180deg;">
+                    <ui:Label tabindex="-1" text="1000 EUR" parse-escape-sequences="true" display-tooltip-when-elided="true" class="wheel-text" />
+                    <ui:Label tabindex="-1" text="+100 FS" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" class="wheel-text wheel-text__bottom" />
+                </ui:VisualElement>
+                <ui:VisualElement name="VisualElement" class="wheel-text-container" style="rotate: -122.5deg;">
+                    <ui:Label tabindex="-1" text="100 FS" parse-escape-sequences="true" display-tooltip-when-elided="true" class="wheel-text" />
+                </ui:VisualElement>
+                <ui:VisualElement name="VisualElement" class="wheel-text-container" style="rotate: -62.5deg;">
+                    <UnityMvvmToolkit.UITK.BindableUIElements.BindableLabel tabindex="-1" text="123" binding-text-path="NoHeadText" class="wheel-text" />
+                    <UnityMvvmToolkit.UITK.BindableUIElements.BindableLabel tabindex="-1" text="123" binding-text-path="NoBodyText" class="wheel-text wheel-text__bottom" />
                 </ui:VisualElement>
             </Land.Elements.AspectRatioElement>
         </ui:VisualElement>

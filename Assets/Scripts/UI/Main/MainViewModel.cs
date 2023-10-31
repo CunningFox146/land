@@ -9,6 +9,10 @@ namespace Land.UI.Main
         private readonly ILocalizationService _localizationService;
         public IProperty<string> HeaderText { get; }
         public IProperty<string> BodyText { get; }
+        public IProperty<string> TryHeadText { get; }
+        public IProperty<string> TryBodyText { get; }
+        public IProperty<string> NoHeadText { get; }
+        public IProperty<string> NoBodyText { get; }
         public IProperty<bool> LanguagePickerVisible { get; }
         public IProperty<bool> IsEnVisible { get; }
         public IProperty<bool> IsGeVisible { get; }
@@ -21,6 +25,11 @@ namespace Land.UI.Main
                 
             HeaderText = new Property<string>();
             BodyText = new Property<string>();
+            TryHeadText = new Property<string>();
+            TryBodyText = new Property<string>();
+            NoHeadText = new Property<string>();
+            NoBodyText = new Property<string>();
+            
             LanguagePickerVisible = new Property<bool>();
             IsGeVisible = new Property<bool>();
             IsEnVisible = new Property<bool>();
@@ -48,6 +57,10 @@ namespace Land.UI.Main
         {
             HeaderText.Value = _localizationService.GetString("bonus");
             BodyText.Value = _localizationService.GetString("body");
+            TryHeadText.Value = _localizationService.GetString("try");
+            TryBodyText.Value = _localizationService.GetString("again");
+            NoHeadText.Value = _localizationService.GetString("no");
+            NoBodyText.Value = _localizationService.GetString("profit");
             
             IsGeVisible.Value = _localizationService.CurrentLocale == "de";
             IsEnVisible.Value = _localizationService.CurrentLocale == "en";

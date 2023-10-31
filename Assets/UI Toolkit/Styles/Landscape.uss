@@ -3,7 +3,7 @@
 }
 
 .wheel-text-container {
-    padding-top: 125px;
+    padding-top: 115px;
 }
 
 .wheel-text__bottom {
