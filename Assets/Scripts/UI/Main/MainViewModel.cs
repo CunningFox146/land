@@ -59,12 +59,11 @@ namespace Land.UI.Main
         private void StartSpin()
         {
             var targetAngle = Random.value < 0.5f ? 180f : 0f;
-            targetAngle += (22.5f + Random.value * 5f) * (Random.value < 0.5f ? -1f : 1f);
+            targetAngle += (22f + Random.value * 5f) * (Random.value < 0.5f ? -1f : 1f);
             _anim = DOTween.Sequence()
-                    .Append(WheelRotation.To(-25f, 1f).SetEase(Ease.OutSine))
-                    .Append(WheelRotation.To(360f * 4f + targetAngle, 8f).SetEase(Ease.OutQuint))
-                ;
-            // .OnComplete(() => AnimDone?.Invoke());
+                .Append(WheelRotation.To(25f, 1f).SetEase(Ease.OutSine))
+                .Append(WheelRotation.To(-360f * 4f + targetAngle, 8.5f).SetEase(Ease.OutQuint))
+                .OnComplete(() => AnimDone?.Invoke());
         }
 
         private void ChangeLocale(string localeName)
