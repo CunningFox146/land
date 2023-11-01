@@ -19,6 +19,7 @@ namespace DefaultNamespace
 
         private void Awake()
         {
+            Application.targetFrameRate = 300;
             _viewService.PushView<MainView>();
         }
     }

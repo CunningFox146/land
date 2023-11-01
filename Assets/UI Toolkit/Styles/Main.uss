@@ -6,6 +6,10 @@
     --popup-button: rgb(100, 173, 218);
     --info: rgb(164, 162, 162);
     --color-2: yellow;
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out-sine;
 }
 
 Label {
@@ -21,6 +25,11 @@ Label {
     padding-right: 0;
     padding-bottom: 0;
     padding-left: 0;
+}
+
+.hidden {
+    opacity: 0;
+    translate: 0 -25px;
 }
 
 .button__icon {
@@ -127,6 +136,9 @@ BindableLabel {
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
+    transition-property: opacity, translate;
+    transition-duration: 0.25s, 0.25s;
+    transition-timing-function: ease-out-sine, ease-out-sine;
 }
 
 .popup-header {

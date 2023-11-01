@@ -18,12 +18,12 @@ namespace Land.UI
             set => uiDocument.sortingOrder = value;
         }
 
-        public void Show()
+        public virtual void Show()
         {
             uiDocument.rootVisualElement.Show();
         }
 
-        public void Hide()
+        public virtual void Hide()
         {
             uiDocument.rootVisualElement.Hide();
         }
