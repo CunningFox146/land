@@ -15,6 +15,8 @@ MonoBehaviour:
   localeName: en
   strings:
     _serializedList:
+    - Key: spin
+      Value: SPIN
     - Key: bonus
       Value: Bonuses!
     - Key: body

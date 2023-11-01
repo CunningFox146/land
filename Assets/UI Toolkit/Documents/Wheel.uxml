@@ -1,9 +1,6 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
     <ui:VisualElement name="Wheel" style="flex-grow: 1; width: 100%; justify-content: center;">
-        <ui:VisualElement name="WheelRotation" usage-hints="DynamicTransform" style="flex-grow: 1; background-image: url(&apos;project://database/Assets/Sprites/Wheel/001%201.png?fileID=2800000&amp;guid=e98d152d220cb4303af51fcf3def436a&amp;type=3#001 1&apos;); -unity-background-scale-mode: scale-to-fit; justify-content: center; align-items: center;">
-            <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="Button" class="button__icon" style="background-image: url(&apos;project://database/Assets/Sprites/Wheel/WheelButton.png?fileID=21300000&amp;guid=c4095aa6076904a1ca0c6cf7ffe4fdaa&amp;type=3#WheelButton&apos;); -unity-background-scale-mode: scale-to-fit; width: 35%; height: 35%; justify-content: center; align-items: center;">
-                <ui:Label tabindex="-1" text="DREHEN" parse-escape-sequences="true" display-tooltip-when-elided="true" picking-mode="Ignore" class="wheel-button__text" />
-            </ui:Button>
+        <Land.Elements.BindableRotationElement name="WheelRotation" usage-hints="DynamicTransform" binding-rotation-path="WheelRotation" style="flex-grow: 1; background-image: url(&apos;project://database/Assets/Sprites/Wheel/001%201.png?fileID=2800000&amp;guid=e98d152d220cb4303af51fcf3def436a&amp;type=3#001 1&apos;); -unity-background-scale-mode: scale-to-fit; justify-content: center; align-items: center;">
             <Land.Elements.AspectRatioElement aspect-ratio-x="1" aspect-ratio-y="1" name="Text" picking-mode="Ignore" style="align-items: center; justify-content: center;">
                 <ui:VisualElement name="VisualElement" class="wheel-text-container">
                     <ui:Label tabindex="-1" text="1000 EUR" parse-escape-sequences="true" display-tooltip-when-elided="true" class="wheel-text" />
@@ -29,7 +26,10 @@
                     <UnityMvvmToolkit.UITK.BindableUIElements.BindableLabel tabindex="-1" text="123" binding-text-path="NoBodyText" class="wheel-text wheel-text__bottom" />
                 </ui:VisualElement>
             </Land.Elements.AspectRatioElement>
-        </ui:VisualElement>
+            <UnityMvvmToolkit.UITK.BindableUIElements.BindableButton parse-escape-sequences="true" display-tooltip-when-elided="true" name="Button" command="StartSpinCommand" class="button__icon" style="background-image: url(&apos;project://database/Assets/Sprites/Wheel/WheelButton.png?fileID=21300000&amp;guid=c4095aa6076904a1ca0c6cf7ffe4fdaa&amp;type=3#WheelButton&apos;); -unity-background-scale-mode: scale-to-fit; width: 35%; height: 35%; justify-content: center; align-items: center;">
+                <UnityMvvmToolkit.UITK.BindableUIElements.BindableLabel tabindex="-1" text="DREHEN" parse-escape-sequences="true" display-tooltip-when-elided="true" picking-mode="Ignore" binding-text-path="SpinText" name="BindableLabel" class="wheel-button__text" />
+            </UnityMvvmToolkit.UITK.BindableUIElements.BindableButton>
+        </Land.Elements.BindableRotationElement>
         <Land.Elements.AspectRatioElement aspect-ratio-x="1" aspect-ratio-y="1" picking-mode="Ignore" style="align-items: center;">
             <ui:VisualElement name="Pointer" style="flex-grow: 0; background-image: url(&apos;project://database/Assets/Sprites/Wheel/WheelPointer.png?fileID=21300000&amp;guid=22e83235ed0d043f7a24743415860849&amp;type=3#WheelPointer&apos;); width: 13%; height: 13%; transform-origin: top; -unity-background-scale-mode: scale-to-fit; position: relative;" />
         </Land.Elements.AspectRatioElement>

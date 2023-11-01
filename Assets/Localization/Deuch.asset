@@ -15,6 +15,8 @@ MonoBehaviour:
   localeName: de
   strings:
     _serializedList:
+    - Key: spin
+      Value: DREHEN
     - Key: bonus
       Value: Bonusse!
     - Key: body

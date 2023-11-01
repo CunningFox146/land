@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using Land.UI.Main;
 using Land.UI.Popup;
 using UnityEngine;
-using UnityEngine.UIElements;
 using Zenject;
 
 namespace Land.UI
