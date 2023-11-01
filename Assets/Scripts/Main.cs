@@ -9,12 +9,20 @@ namespace DefaultNamespace
     public class Main : MonoBehaviour
     {
         private IViewService _viewService;
+        private ParticleSystem _coinsFx;
 
         [Zenject.Inject]
-        private void Constructor(IViewService viewService, MainViewModel mainViewModel)
+        private void Constructor(IViewService viewService, MainViewModel mainViewModel, ParticleSystem coinsFx)
         {
+            _coinsFx = coinsFx;
             _viewService = viewService;
-            mainViewModel.AnimDone += () => _viewService.PushView<PopupView>();
+            mainViewModel.AnimDone += OnSpinAnimDone;
+        }
+
+        private void OnSpinAnimDone()
+        {
+            _viewService.PushView<PopupView>();
+            _coinsFx.gameObject.SetActive(true);
         }
 
         private void Awake()

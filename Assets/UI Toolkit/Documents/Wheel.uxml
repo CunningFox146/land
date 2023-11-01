@@ -31,7 +31,7 @@
             </UnityMvvmToolkit.UITK.BindableUIElements.BindableButton>
         </Land.Elements.BindableRotationElement>
         <Land.Elements.AspectRatioElement aspect-ratio-x="1" aspect-ratio-y="1" picking-mode="Ignore" style="align-items: center;">
-            <ui:VisualElement name="Pointer" style="flex-grow: 0; background-image: url(&apos;project://database/Assets/Sprites/Wheel/WheelPointer.png?fileID=21300000&amp;guid=22e83235ed0d043f7a24743415860849&amp;type=3#WheelPointer&apos;); width: 13%; height: 13%; transform-origin: top; -unity-background-scale-mode: scale-to-fit; position: relative;" />
+            <ui:VisualElement name="Pointer" style="flex-grow: 0; width: 13%; height: 13%; transform-origin: top; position: relative; background-image: url(&apos;project://database/Assets/Sprites/Wheel/WheelPointer.png?fileID=21300000&amp;guid=22e83235ed0d043f7a24743415860849&amp;type=3#WheelPointer&apos;); -unity-background-scale-mode: scale-to-fit;" />
         </Land.Elements.AspectRatioElement>
     </ui:VisualElement>
 </ui:UXML>

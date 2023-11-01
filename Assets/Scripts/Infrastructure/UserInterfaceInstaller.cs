@@ -17,6 +17,7 @@ namespace Infrastructure
         [Space]
         [SerializeField] private PopupViewPortrait _popupViewPortraitPrefab;
         [SerializeField] private PopupViewLandscape _popupViewLandscapePrefab;
+        [Space] [SerializeField] private ParticleSystem _coinsFx;
         
         [SerializeField] private List<LocalizationData> _locales;
         
@@ -32,6 +33,7 @@ namespace Infrastructure
             Container.BindFactory<PopupViewLandscape, PopupViewLandscape.Factory>()
                 .FromComponentInNewPrefab(_popupViewLandscapePrefab);
             
+            Container.Bind<ParticleSystem>().FromInstance(_coinsFx).AsSingle();
             Container.BindInterfacesAndSelfTo<ViewService>().AsSingle();
             Container.Bind<IEnumerable<LocalizationData>>().FromInstance(_locales).AsSingle();
             Container.Bind<ILocalizationService>().To<LocalizationService>().AsSingle();
