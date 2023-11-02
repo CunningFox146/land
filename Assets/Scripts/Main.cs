@@ -1,4 +1,3 @@
-using System;
 using Land.UI;
 using Land.UI.Main;
 using Land.UI.Popup;

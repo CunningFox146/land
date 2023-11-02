@@ -1,6 +1,5 @@
-using System.Collections;
 using System.Collections.Generic;
-using DefaultNamespace;
+using DefaultNamespace.Sound;
 using Land.Localization;
 using Land.UI;
 using Land.UI.Main;
@@ -39,6 +38,7 @@ namespace Infrastructure
             Container.Bind<ILocalizationService>().To<LocalizationService>().AsSingle();
             Container.Bind<MainViewModel>().ToSelf().AsSingle();
             Container.Bind<PopupViewModel>().ToSelf().AsSingle();
+            Container.Bind<ISoundsSystem>().To<SoundsSystem>().FromComponentsInHierarchy().AsSingle();
         }
     }
 }

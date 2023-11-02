@@ -123,6 +123,63 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &100955473
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 100955475}
+  - component: {fileID: 100955474}
+  m_Layer: 0
+  m_Name: SoundSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &100955474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100955473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56fdfead326e42f4a3c5d485cc336888, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sounds:
+  - <Name>k__BackingField: SlotSpin
+    <Audio>k__BackingField: {fileID: 8300000, guid: 45352049f8b5d4a2ab503c4616ac42a1, type: 3}
+    <IsLoop>k__BackingField: 1
+  - <Name>k__BackingField: SlotStart
+    <Audio>k__BackingField: {fileID: 8300000, guid: afd18c678d4ab4338b5e5cbb71a9d7fd, type: 3}
+    <IsLoop>k__BackingField: 0
+  - <Name>k__BackingField: Cheer
+    <Audio>k__BackingField: {fileID: 8300000, guid: 7daddd945deef4da5bf1563ed4e9afc4, type: 3}
+    <IsLoop>k__BackingField: 0
+  - <Name>k__BackingField: Win
+    <Audio>k__BackingField: {fileID: 8300000, guid: 722834d621b5844e9b3bc822102e5fc4, type: 3}
+    <IsLoop>k__BackingField: 0
+--- !u!4 &100955475
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100955473}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &672925026
 GameObject:
   m_ObjectHideFlags: 0
@@ -582,3 +639,4 @@ SceneRoots:
   - {fileID: 1881619292}
   - {fileID: 1048875243}
   - {fileID: 994609178}
+  - {fileID: 100955475}
