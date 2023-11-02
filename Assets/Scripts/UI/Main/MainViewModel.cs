@@ -100,7 +100,9 @@ namespace Land.UI.Main
                     _soundsSystem.PlaySound("Cheer");
                     _soundsSystem.PlaySound("Win");
                     _soundsSystem.StopSound("SlotSpin");
+                    _anim = null;
                 });
+            StartSpinCommand.RaiseCanExecuteChanged();
         }
 
         private void ChangeLocale(string localeName)

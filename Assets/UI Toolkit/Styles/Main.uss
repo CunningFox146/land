@@ -1,3 +1,9 @@
+* {
+    transition-duration: 0.5s, 0.5s;
+    transition-timing-function: ease-out-sine, ease-out-sine;
+    transition-property: opacity, translate;
+}
+
 :root {
     --header-head: rgb(255, 255, 255);
     --header-body: rgb(22, 37, 63);
@@ -7,7 +13,7 @@
     --info: rgb(164, 162, 162);
     --color-2: yellow;
     opacity: 1;
-    transition-property: opacity;
+    transition-property: all;
     transition-duration: 0.5s;
     transition-timing-function: ease-out-sine;
 }
@@ -46,11 +52,18 @@ Label {
     border-right-width: 0;
     border-bottom-width: 0;
     border-left-width: 0;
+    transition-property: opacity, translate, scale;
+    transition-duration: 0.5s, 0.5s, 0.1s;
+    transition-timing-function: ease-out-sine, ease-out-sine, ease-out-sine;
+    transition-delay: 0s, 0s, 0s;
+    scale: 1 1;
 }
 
 .header-body {
     flex-grow: 0;
     background-color: var(--header-body);
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out-sine;
 }
 
 .header-head {
@@ -61,6 +74,8 @@ Label {
     border-top-right-radius: 10px;
     justify-content: center;
     align-self: center;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out-sine;
 }
 
 .wheel-text {
@@ -195,4 +210,28 @@ BindableLabel {
 .button-popup__text {
     -unity-font-style: normal;
     -unity-font-definition: url('project://database/Assets/Fonts/Rubik/Rubik-SemiBold%20SDF.asset?fileID=11400000&guid=cacfd3c6ed807454bb39879bc049a676&type=2#Rubik-SemiBold SDF');
+}
+
+.slide-right {
+    opacity: 0;
+    translate: -50px 0;
+}
+
+.slide-left {
+    opacity: 0;
+    translate: 50px 0;
+}
+
+.slide-up {
+    opacity: 0;
+    translate: 0 50px;
+}
+
+.button__icon:disabled {
+    opacity: 1;
+}
+
+.button__icon:hover {
+    opacity: 1;
+    scale: 1.1 1.1;
 }

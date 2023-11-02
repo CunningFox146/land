@@ -6,16 +6,16 @@
     <ui:VisualElement name="Root" style="flex-grow: 1; width: 100%; height: 100%; background-image: url(&apos;project://database/Assets/Sprites/Bg/Bg.png?fileID=2800000&amp;guid=78a154f6ec1774c6895b51e6c4953660&amp;type=3#Bg&apos;); -unity-background-scale-mode: scale-and-crop; align-items: center; justify-content: flex-end; flex-direction: column;">
         <ui:VisualElement name="Top" style="flex-grow: 1; align-items: stretch; margin-top: 70px; display: flex; visibility: visible; flex-shrink: 1; justify-content: center;">
             <ui:VisualElement name="Content" style="rotate: -5deg;">
-                <ui:VisualElement name="Header" class="header-head">
+                <ui:VisualElement name="Header" usage-hints="DynamicTransform" class="header-head slide-right">
                     <UnityMvvmToolkit.UITK.BindableUIElements.BindableLabel tabindex="-1" binding-text-path="HeaderText" text="test" style="color: rgb(0, 0, 0); margin-top: 22px; margin-right: 62px; margin-bottom: 20px; margin-left: 62px;" />
                 </ui:VisualElement>
-                <ui:VisualElement name="Body" class="header-body" style="border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px;">
+                <ui:VisualElement name="Body" usage-hints="DynamicTransform" class="header-body slide-left" style="border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px;">
                     <UnityMvvmToolkit.UITK.BindableUIElements.BindableLabel tabindex="-1" text="Rad drehen und Belohnung erhalten!" parse-escape-sequences="true" display-tooltip-when-elided="true" binding-text-path="BodyText" style="-unity-text-align: middle-center; flex-grow: 1; margin-top: 28px; margin-bottom: 28px; font-size: 36px; margin-right: 20px; margin-left: 20px; color: rgb(255, 255, 255);" />
                 </ui:VisualElement>
             </ui:VisualElement>
             <ui:Instance template="LanguagePicker" name="LanguagePicker" style="position: absolute; flex-grow: 1; align-items: center; height: 100%; align-self: flex-end; translate: 100% 0;" />
         </ui:VisualElement>
-        <ui:Instance template="Wheel" name="Wheel" style="flex-grow: 6; width: 100%; margin-top: 50px; max-height: 70%;" />
+        <ui:Instance template="Wheel" name="Wheel" usage-hints="DynamicTransform" class="slide-up" style="flex-grow: 6; width: 100%; margin-top: 50px; max-height: 70%;" />
     </ui:VisualElement>
     <ui:VisualElement picking-mode="Ignore" style="flex-grow: 1; position: absolute; background-image: url(&apos;project://database/Assets/Fx.renderTexture?fileID=8400000&amp;guid=bcc34934111b64476a032d17a4378029&amp;type=2#Fx&apos;); -unity-background-scale-mode: scale-and-crop; width: 100%; height: 100%;" />
 </ui:UXML>
