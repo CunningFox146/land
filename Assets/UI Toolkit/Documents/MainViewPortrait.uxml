@@ -8,7 +8,7 @@
                 <UnityMvvmToolkit.UITK.BindableUIElements.BindableLabel tabindex="-1" binding-text-path="HeaderText" text="Bonusse!" parse-escape-sequences="true" display-tooltip-when-elided="true" binding-path="HeaderText" style="color: rgb(0, 0, 0); margin-top: 18px; margin-right: 60px; margin-bottom: 18px; margin-left: 50px; -unity-text-align: middle-center; -unity-font-style: bold; font-size: 18px;" />
             </ui:VisualElement>
             <ui:VisualElement name="Body" usage-hints="DynamicTransform" class="header-body slide-left">
-                <UnityMvvmToolkit.UITK.BindableUIElements.BindableLabel tabindex="-1" text="Rad drehen und Belohnung erhalten!" parse-escape-sequences="true" display-tooltip-when-elided="true" binding-path="BodyText" style="-unity-text-align: middle-center; flex-grow: 1; margin-top: 28px; margin-bottom: 28px; -unity-font-style: bold; color: rgb(255, 255, 255); font-size: 18px;" />
+                <UnityMvvmToolkit.UITK.BindableUIElements.BindableLabel tabindex="-1" text="Rad drehen und Belohnung erhalten!" parse-escape-sequences="true" display-tooltip-when-elided="true" binding-path="BodyText" binding-text-path="BodyText" style="-unity-text-align: middle-center; flex-grow: 1; margin-top: 28px; margin-bottom: 28px; -unity-font-style: bold; color: rgb(255, 255, 255); font-size: 18px;" />
             </ui:VisualElement>
         </ui:VisualElement>
         <ui:Instance template="Wheel" name="Wheel" usage-hints="DynamicTransform" style="flex-grow: 1; width: 100%; padding-top: 25px; padding-bottom: 25px; padding-right: 10px; padding-left: 10px;" />
